@@ -20,4 +20,25 @@ document.getElementById('add-gb').addEventListener('click', function() {
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 })
 
+
+{/* <button id="minus-banana">-</button>
+<button id="add-banana">+</button> */}
+
+document.getElementById("minus-banana").addEventListener('click', function() {
+    // THIS CODE RUNS WHEN WE CLICK THE MINUS BUTTON!!!
+    console.log('banana minus was clicked')
+    const pTagThatWeMade = document.createElement('p');
+    // <p>
+    // </p>
+    pTagThatWeMade.textContent = 'This is the p tag that we made!';
+    // pTagThatWeMade.
+    // <p>
+    //  This is the p tag that we made!
+    // </p>
+    document.getElementById("food-summary").append(pTagThatWeMade);
+})
+
+// next, we need to add an event listener for the "plus banana button"
+
+
 // TODO: Hook up event listeners for the rest of the buttons
